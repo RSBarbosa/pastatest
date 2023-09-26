@@ -1,0 +1,14 @@
+# Arquivos e diretórios específicos do Cypress
+/cypress/videos/
+/cypress/screenshots/
+
+# Dependências do Node.js - node_modules é geralmente excluído
+/node_modules/
+
+# Arquivos e diretórios gerados pelo ambiente de desenvolvimento
+*.log
+*.json
+*.lock
+*.swp
+.DS_Store
+.env
