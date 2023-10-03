@@ -3,14 +3,25 @@ beforeEach(function(){
   cy.visit('http://localhost:4200/#/home')
 })
 
+// describe('Happy path', () => {
+//   it('Preencher os campos do formário corretamente para cadastrar um novo usuário', () => {
+//     cy.wait(10000)
+//     cy.contains('a', 'Register now').click();
+//     cy.get('[data-test="email"]').type('renata@email.com.br');
+//     cy.get('[data-test="fullName"]').type('Renata Barbosa');
+//     cy.get('[data-test="registerUserName"]').type('renatabarbosa');
+//     cy.get('[data-test="registerPassword"]').type('Minhasenha01');
+//     cy.contains('button', 'Register').click();
+//   })
+// })
 describe('Happy path', () => {
   it('Preencher os campos do formário corretamente para cadastrar um novo usuário', () => {
     cy.wait(10000)
     cy.contains('a', 'Register now').click();
-    cy.get('[data-test="email"]').type('renata@email.com.br');
-    cy.get('[data-test="fullName"]').type('Renata Barbosa');
-    cy.get('[data-test="registerUserName"]').type('renatabarbosa');
-    cy.get('[data-test="registerPassword"]').type('Minhasenha01');
+    cy.get('[data-test="email"]').type('carowl@alura.com.br');
+    cy.get('[data-test="fullName"]').type('carowl');
+    cy.get('[data-test="registerUserName"]').type('carowl');
+    cy.get('[data-test="registerPassword"]').type('12345678');
     cy.contains('button', 'Register').click();
   })
 })
